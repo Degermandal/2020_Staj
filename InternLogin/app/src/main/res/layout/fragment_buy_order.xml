@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/order_buy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_order"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Hisse"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text=":"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/btn_order_stock_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="#E7EEF8"
+                            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:text="Hisse"
+                            android:textAlignment="center"
+                            android:textColor="#494949" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_order_info"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Alış"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Satış"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Son"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="#C6768793" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_stockBuying1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="--" />
+
+                        <TextView
+                            android:id="@+id/tv_stockSelling1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="--" />
+
+                        <TextView
+                            android:id="@+id/tv_stockLast1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="--" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding= "5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textColor="#000"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Emir Tipi"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text=":"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spn_orderType_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="#E7EEF8"
+                            android:text="Hisse"
+                            android:spinnerMode="dropdown"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding= "5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textColor="#000"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Süre Tipi"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text=":"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spn_timeType_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="#E7EEF8"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textColor="#000"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Fiyat"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text=":"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_decrease_buy"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_remove_circle_24"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+
+                        <EditText
+                            android:id="@+id/edtxt_price_buy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:inputType="numberDecimal"
+                            android:gravity="center_horizontal|center_vertical"/>
+                        <Button
+                            android:id="@+id/btn_increase_buy"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_add_circle_24"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textColor="#000"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Adet"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text=":"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/edtxt_amount_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="1"
+                            android:gravity="center_horizontal|center_vertical"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding= "5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textColor="#000"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Tutar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text=":"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/tv_total_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|center_vertical"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/order_buttons_shape"
+                android:onClick="onClickBuy"
+                android:text="Al"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+

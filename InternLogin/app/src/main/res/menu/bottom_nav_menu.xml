@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Portföy" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_baseline_shuffle_24"
+        android:title="Emir Giriş" />
+
+    <item
+        android:id="@+id/navigation_dashboard2"
+        android:icon="@drawable/order_track_icon"
+        android:title="Emir Takip" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/finance"
+        android:title="Piyasalar" />
+
+    <item
+        android:id="@+id/navigation_currency"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Menu" />
+
+</menu>

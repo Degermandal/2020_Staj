@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/market_row_shape">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="5dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+        <TextView
+            android:id="@+id/txt_symbol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Sembol"
+            android:textColor="#434141"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_buying"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Alış"
+            android:textColor="#434141"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_selling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Satış"
+            android:textColor="#434141"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_last"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Son"
+            android:textColor="#434141"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="% Fark"
+            android:textColor="#434141"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+</LinearLayout>

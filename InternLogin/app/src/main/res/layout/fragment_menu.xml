@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_account_tablayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Menü"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_account_pages"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn_menu_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Döviz"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_menu_prmetals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Değerli Madenler"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_menu_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Portföy Analiz"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_menu_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Piyasa Haberleri"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_menu_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Nasıl Kullanırım"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+
+            <Switch
+                android:id="@+id/btn_settings_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:padding="13dp"
+                android:paddingHorizontal="15dp"
+                android:text="Emir İptal Sorgusu"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Button
+                android:id="@+id/btn_menu_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/menu_button_shape"
+                android:drawableEnd="@drawable/ic_baseline_power_settings_new_24"
+                android:gravity="left|center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="Çıkış"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

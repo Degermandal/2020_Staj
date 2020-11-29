@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.portfoy.AssetsFragment"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="#2773CC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Toplam Bakiye:"
+            android:textColor="#fff"
+            android:textSize="18dp"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_all_banks_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:gravity="left"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="******₺"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+
+            ></TextView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/account_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5E98DC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabTextColor="#fff">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/account_tabItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DenizBank" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/account_tabItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Bank" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/account_tabItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B Bank" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/account_tabItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C Bank" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/account_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_tabLayout" />
+
+</LinearLayout>

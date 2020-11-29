@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TC Kimlik No"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/et_userTcNo"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_shape"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:id="@+id/tv_warningTckn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/warning_text_shape"
+                android:padding="7dp"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Şifre"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/et_userPassword"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_shape"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:id="@+id/tv_warningPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/warning_text_shape"
+                android:padding="7dp"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_forgetPassText"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:text="Şifremi Unuttum"
+                android:textColor="#E3DDDD" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:onClick="clickRememberMe"
+                android:text="Beni Hatırla"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:buttonTint="#000000"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:onClick="clickSigninButton"
+                    android:padding="4dp"
+                    android:text="Giriş"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    android:text="Hesabınız yok mu ?"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="clickSignupButton"
+                    android:text="Kayıt Ol"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
